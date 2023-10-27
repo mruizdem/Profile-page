@@ -1,0 +1,77 @@
+/* STYLING */
+body {
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+img {
+    width: 20px;
+}
+
+/* HEADER */
+.header {
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px; 
+    width: 100%; 
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a, .nav-bar {
+    margin: 0 30px;
+}
+
+#title {
+    font-size: 28px;
+}
+
+/* BODY ADJUSTMENTS */
+.left , .right {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* SECTION: PROFILE */
+.profile {
+    background: yellow;
+    width: 500px;
+}
+
+/* SECTION: EDUCATION */
+.education {
+    background: lightgreen;
+    width: 500px;
+    height: 500px;
+}
+
+/* SECTION: CONNECTION REQUEST */
+.conn-request {
+    background: yellowgreen;
+    width: 500px;
+    height: 500px;
+}
+
+/* SECTION: CONNECTIONS */
+.connections {
+    background: red;
+    width: 500px;
+    height: 500px;
+}
+
+/* FOOTER */
