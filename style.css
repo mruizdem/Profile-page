@@ -56,6 +56,7 @@ span {
     border-radius: 15px;
     padding: 0px 15px;
     border: 2px solid gray;
+    font-style: normal;
 }
 
 /* IMAGE CONFIGURATION */
@@ -78,7 +79,7 @@ span {
 
 /* HEADER */
 .header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     margin: 0;
@@ -89,12 +90,12 @@ span {
     height: 75px; 
     width: 100%; 
 }
-
+/* 
 .placeholder {
     height: 75px; 
     width: 100%; 
     visibility: hidden;
-}
+} */
 
 .header a {
     text-decoration: none;
