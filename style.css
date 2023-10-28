@@ -48,6 +48,16 @@ span {
     cursor: pointer;
 }
 
+.number {
+    background-color: lightgray;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 0px 15px;
+    border: 2px solid gray;
+}
+
 /* IMAGE CONFIGURATION */
 .round-img {
     width: 60px;
@@ -195,16 +205,6 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-}
-
-#number {
-    background-color: lightgray;
-    color: black;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 15px;
-    padding: 0px 15px;
-    border: 2px solid gray;
 }
 
 .conn-request-info {
