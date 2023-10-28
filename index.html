@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- added a place holder to take the space of the fixed header, this helps maintain all the spacing that was set previously -->
+    <div class="placeholder"></div>
     <header class="header">
         <a href="index.html" id="title">Profile</a>
         <nav class="nav-bar">
@@ -18,38 +23,84 @@
     </header>
     <main class="main">
         <!-- Left Column -->
-        <section class="left">
+        <div class="left">
             <article class="profile">
-                <!-- Header for this section -->
-                <img src="#" alt="Profile Picture" id="profile-pic" class="round-image">
+                <img src="attributes/images/jane-m.jpg" alt="#" class="round-img" id="profile-picture">
+                <!-- Header for this div -->
                 <header class="profile-header"></header>
                 <div class="profile-info">
                     <h2>Jane Doe</h2>
                     <div class="location">
-                        <img src="#" alt="Map Marker">
+                        <img src="attributes/icons/map-marker.png" alt="Map Marker" class="icon">
                         <span>Seattle</span>
                     </div>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
                     <div class="edit">
-                        <img src="#" alt="Gear Icon">
+                        <img src="attributes/icons/gear.png" alt="Gear Icon" class="icon">
                         <a href="#">edit profile</a>
                     </div>
                 </div>
             </article>
             <article class="education">
-                <h2>Education</h2>
+                <header class="education-header">
+                    <h3>Education</h3>
+                </header>
+                <div class="education-info">
+                    <h4>Coding Dojo - Full Stack Bootcamp</h4>
+                    <p><span>Dec 2019 - Mar 2020</span></p>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
             </article>
-        </section>
+        </div>
         <!-- Right Column -->
-        <section class="right">
+        <div class="right">
             <article class="conn-request">
-                <h2>Connection Requests</h2>
+                <header class="conn-request-header">
+                    <h3 id="number">2</h3>
+                    <h3>Connection Requests</h3>
+                </header>
+                <div class="conn-request-info">
+                    <!-- Profiles will be an anchor so they could be clicked to be viewed -->
+                    <div class="conn-notif">
+                        <img src="attributes/images/todd-s.jpg" alt="Todd" class="round-img">
+                        <a href="#">Todd E.</a>
+                        <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon">
+                        <img src="attributes/icons/close-circle.png" alt="No" class="icon">
+                    </div>
+                    <div class="conn-notif">
+                        <img src="attributes/images/phil-s.jpg" alt="Phil" class="round-img">
+                        <a href="#">Phil K.</a>
+                        <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon">
+                        <img src="attributes/icons/close-circle.png" alt="No" class="icon">
+                    </div>
+                </div>
             </article>
             <article class="connections">
-                <h2>Your Connections</h2>
+                <header class="connections-header">
+                    <h3 id="number">500+</h3>
+                    <h3>Your Connections</h3>
+                </header>
+                <div class="connections-info">
+                    <div class="connection-notif">
+                        <img src="attributes/images/adrien-s.jpg" alt="Adrien" class="round-img">
+                        <a href="#">Adrien D.</a>
+                    </div>
+                    <div class="connection-notif">
+                        <img src="attributes/images/anne-s.jpg" alt="Anne" class="round-img">
+                        <a href="#">Anne J.</a>
+                    </div>
+                    <div class="connection-notif">
+                        <img src="attributes/images/alayne-s.jpg" alt="Alayne" class="round-img">
+                        <a href="#">Alayne T.</a>
+                    </div>
+                    <div class="connection-notif">
+                        <img src="attributes/images/arry-s.jpg" alt="Arry" class="round-img">
+                        <a href="#">Arry Y.</a>
+                    </div>
+                </div>
             </article>
-        </section>
+        </div>
         <footer class="footer"></footer>
     </main>
 </body>

@@ -1,6 +1,14 @@
 /* STYLING */
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+}
+
 body {
     margin: 0 auto;
+    background-color: beige;
+    overflow: scroll;
 }
 
 .main {
@@ -10,14 +18,59 @@ body {
 
 h2 {
     font-size: 28px;
+    padding-top: 20px;
 }
 
-img {
+h3, h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+p, a, span {
+    font-size: 16px;
+}
+
+span {
+    font-style: italic;
+    align-items: center;
+}
+
+.sign-out {
+    background-color: #17a2b8;
+    border: none;
+    padding: 5px 10px;
+    color: gray;
+}
+
+.nav-bar button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* IMAGE CONFIGURATION */
+.round-img {
+    width: 60px;
+    border-radius: 25px;
+}
+
+.icon {
     width: 20px;
+}
+
+#profile-picture {
+    position: absolute;
+    width: 100px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 /* HEADER */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     margin: 0;
     background: black;
     display: flex;
@@ -27,9 +80,16 @@ img {
     width: 100%; 
 }
 
+.placeholder {
+    height: 75px; 
+    width: 100%; 
+    visibility: hidden;
+}
+
 .header a {
     text-decoration: none;
-    color: white;
+    color: grey;
+    font-size: 18px;
 }
 
 .header a, .nav-bar {
@@ -38,40 +98,160 @@ img {
 
 #title {
     font-size: 28px;
+    color: white;
+}
+
+.nav-bar a.active {
+    color: white;
+}
+
+.nav-bar a:hover {
+    color: white;
+    transition: .3s;
 }
 
 /* BODY ADJUSTMENTS */
 .left , .right {
     display: block;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 20px 20px 20px;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 /* SECTION: PROFILE */
 .profile {
-    background: yellow;
-    width: 500px;
+    width: 700px;
+    line-height: 1.5;
+}
+
+.profile-header {
+    /* position: relative; */
+    background: #17a2b8; /* grabbed color from picked to match the image */
+    width: 700px;
+    height: 100px;
+}
+
+.profile-info {
+    display: block;
+    padding: 20px;
+    border: 2px solid gray;
+    margin-bottom: 40px;
+}
+
+.location, .edit {
+    display: flex;
+    align-items: center;
+}
+
+.location img, .edit img {
+    padding-right: 20px;
+}
+
+.edit a:hover {
+    color: #17a2b8;
 }
 
 /* SECTION: EDUCATION */
 .education {
-    background: lightgreen;
     width: 500px;
     height: 500px;
+}
+
+.education-header {
+    background: darkslategray;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.education-info {
+    padding: 20px;
+    border: 2px solid gray;
+    height: 200px;
+    line-height: 1.5;
+}
+
+.education h4 {
+    color: black;
 }
 
 /* SECTION: CONNECTION REQUEST */
 .conn-request {
-    background: yellowgreen;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+}
+
+.conn-request-header {
+    background: darkslategray;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#number {
+    background-color: lightgray;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 0px 15px;
+    border: 2px solid gray;
+}
+
+.conn-request-info {
+    display: block;
+    padding: 20px;
+    border: 2px solid gray;
+    margin-bottom: 40px;
+}
+
+.conn-notif {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 /* SECTION: CONNECTIONS */
 .connections {
-    background: red;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+}
+
+.connections-header {
+    background: darkslategray;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.connections-info {
+    display: block;
+    padding: 45px;
+    border: 2px solid gray;
+}
+
+.connection-notif {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.connection-notif a {
+    padding-left: 40px;
 }
 
 /* FOOTER */
