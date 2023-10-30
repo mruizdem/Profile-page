@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- added a place holder to take the space of the fixed header, this helps maintain all the spacing that was set previously -->
-    <!-- <div class="placeholder"></div> -->
+    <!-- <hr class="placeholder"></hr> -->
     <header class="header">
         <a href="index.html" id="title">Profile</a>
         <nav class="nav-bar">
@@ -30,7 +30,7 @@
                 <hr class="profile-header">
                 <!-- <header class="profile-header"></header> -->
                 <div class="profile-info">
-                    <h2>Jane Doe</h2>
+                    <h2 id="user-name">Jane Doe</h2>
                     <div class="location">
                         <img src="attributes/icons/map-marker.png" alt="Map Marker" class="icon">
                         <span>Seattle</span>
@@ -39,7 +39,7 @@
                     <p>Master of shadows and the Internet!</p>
                     <div class="edit">
                         <img src="attributes/icons/gear.png" alt="Gear Icon" class="icon">
-                        <a href="#">edit profile</a>
+                        <a href="#" onclick="editProfile()">edit profile</a>
                     </div>
                 </div>
             </article>
@@ -58,32 +58,28 @@
         <div class="right">
             <article class="conn-request">
                 <header class="conn-request-header">
-                    <span class="number">2</span>
+                    <span class="number" id="conn-req-counter">2</span>
                     <h3>Connection Requests</h3>
                 </header>
                 <div class="conn-request-info">
                     <!-- Profiles will be an anchor so they could be clicked to be viewed -->
-                    <div class="conn-notif">
+                    <div class="conn-notif" id="notif-one">
                         <img src="attributes/images/todd-s.jpg" alt="Todd" class="round-img">
                         <a href="#">Todd E.</a>
-                        <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon">
-                        <img src="attributes/icons/close-circle.png" alt="No" class="icon">
+                        <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon" onclick="approveRequest(1)">
+                        <img src="attributes/icons/close-circle.png" alt="No" class="icon" onclick="rejectRequest(1)">
                     </div>
-                    <div class="conn-notif">
+                    <div class="conn-notif" id="notif-two">
                         <img src="attributes/images/phil-s.jpg" alt="Phil" class="round-img">
                         <a href="#">Phil K.</a>
-                        <a href="#">
-                            <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon">
-                        </a>
-                        <a href="#">
-                            <img src="attributes/icons/close-circle.png" alt="No" class="icon">
-                        </a>
+                        <img src="attributes/icons/accept-circle.png" alt="Yes" class="icon" onclick="approveRequest(2)">
+                        <img src="attributes/icons/close-circle.png" alt="No" class="icon" onclick="rejectRequest(2)">
                     </div>
                 </div>
             </article>
             <article class="connections">
                 <header class="connections-header">
-                    <span class="number">500+</span>
+                    <span class="number" id="conn-counter">418</span>
                     <h3>Your Connections</h3>
                 </header>
                 <div class="connections-info">
@@ -108,5 +104,6 @@
         </div>
         <footer class="footer"></footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
